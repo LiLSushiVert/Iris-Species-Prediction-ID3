@@ -1,41 +1,41 @@
- Phân loại hoa Iris bằng mô hình Cây Quyết Định (ID3)
+# Iris Species Classification with Decision Tree (ID3)
 
-Dự án này xây dựng một ứng dụng web đơn giản sử dụng **Streamlit** để phân loại loài hoa **Iris** dựa trên 4 đặc trưng hình thái học. Mô hình học máy được sử dụng là **Decision Tree Classifier** với tiêu chí **entropy (ID3)**.
-
----
-
- Mô tả dữ liệu
-
-- Dataset: `iris.csv` gồm **150 mẫu**
-- Mỗi mẫu gồm 4 đặc trưng:
-  - Chiều dài và chiều rộng **đài hoa (sepal)**
-  - Chiều dài và chiều rộng **cánh hoa (petal)**
-- Nhãn: Tên loài hoa (`setosa`, `versicolor`, `virginica`)
+This project builds a simple interactive web application using **Streamlit** to classify **Iris flower species** based on four morphological features. The machine learning model used is the **Decision Tree Classifier** with the **entropy criterion** (ID3 algorithm).
 
 ---
 
- Mô hình và quy trình
+## 📊 Dataset Description
 
-- Mô hình: `DecisionTreeClassifier(criterion='entropy')`
-- Tiền xử lý:
-  - Chia dữ liệu: **64% train**, còn lại là validation và test
-  - Chuẩn hóa đặc trưng bằng **StandardScaler**
-- Huấn luyện và đánh giá mô hình
-
----
-
- Giao diện người dùng
-
-Ứng dụng được xây dựng bằng **Streamlit**, với các tính năng:
-
-- Nhập giá trị đặc trưng của hoa
-- Hiển thị kết quả phân loại loài hoa
-- Hiển thị hình ảnh minh họa
-- Trực quan hóa dữ liệu bằng biểu đồ
+- **Dataset**: `iris.csv` with **150 samples**
+- Each sample includes 4 features:
+  - Sepal length and width
+  - Petal length and width
+- **Target label**: Flower species (`setosa`, `versicolor`, `virginica`)
 
 ---
 
- Thư viện sử dụng
+## 🧠 Model & Workflow
+
+- Model: `DecisionTreeClassifier(criterion='entropy')`
+- Preprocessing steps:
+  - Data split: **64% training**, the rest for validation and testing
+  - Feature scaling with **StandardScaler**
+- Train and evaluate the model using standard metrics
+
+---
+
+##  User Interface (Streamlit App)
+
+The app is built using **Streamlit** with the following features:
+
+- Input form to enter flower features
+- Real-time prediction of flower species
+- Display of illustrative images
+- Data visualization (scatter plots, histograms, etc.)
+
+---
+
+##  Libraries Used
 
 - `pandas`, `numpy`
 - `scikit-learn`
@@ -44,16 +44,25 @@ Dự án này xây dựng một ứng dụng web đơn giản sử dụng **Stre
 
 ---
 
- Mục tiêu dự án
+##  Project Objectives
 
-- Hỗ trợ học sinh/sinh viên hiểu cách hoạt động của **cây quyết định (decision tree)**
-- Trực quan hóa quy trình phân loại dữ liệu một cách dễ hiểu
+- Help students and beginners understand how **Decision Trees** work
+- Provide a visual, interactive way to explore classification algorithms
 
 ---
 
- Hướng dẫn chạy ứng dụng
+## How to Run the App
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+
+## Result:
+ ![image](https://github.com/user-attachments/assets/8ff7bd84-0c99-4806-a82b-fb60e48ebb8a)
+
+![image](https://github.com/user-attachments/assets/f1e517b0-0134-44d2-83b0-9cfd5eb24a73)
+
+![image](https://github.com/user-attachments/assets/b21d3c40-8194-48a6-a344-85b288557c5a)
+
+
 
