@@ -4,7 +4,7 @@ This project builds a simple interactive web application using **Streamlit** to 
 
 ---
 
-## 📊 Dataset Description
+##  Dataset Description
 
 - **Dataset**: `iris.csv` with **150 samples**
 - Each sample includes 4 features:
@@ -14,7 +14,7 @@ This project builds a simple interactive web application using **Streamlit** to 
 
 ---
 
-## 🧠 Model & Workflow
+##  Model & Workflow
 
 - Model: `DecisionTreeClassifier(criterion='entropy')`
 - Preprocessing steps:
