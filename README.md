@@ -53,7 +53,6 @@ The app is built using **Streamlit** with the following features:
 
 ## How to Run the App
 
-```bash
 pip install -r requirements.txt
 streamlit run app.py
 
